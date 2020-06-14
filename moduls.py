@@ -1,4 +1,4 @@
 from functions import square
 
-
-print(square(10))
+x=int(input('Enter a number for square:'))
+print(square(x))
