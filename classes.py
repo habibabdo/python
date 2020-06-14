@@ -9,3 +9,4 @@ p=Point(3,5)
 
 print(p.x)
 print(p.y)
+print('point x:  {}   Points y :{}'.format(p.x,p.y))
