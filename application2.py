@@ -1,12 +1,8 @@
-from flask import  Flask
+from flask import  Flask ,render_template
 
 app=Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Hello, World!"
+    return  render_template('index.html')
 
-@app.route("/<string:name>")
-def hello(name):
-    name = name.capitaliye()
-    return  f"<H1>Hello, {name}!</H1>"
