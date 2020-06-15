@@ -8,4 +8,5 @@ def index():
 
 @app.route("/<string:name>")
 def hello(name):
-    return  f"Hello, {name}!"
+    name = name.capitaliye()
+    return  f"<H1>Hello, {name}!</H1>"
