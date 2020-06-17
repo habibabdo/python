@@ -1,9 +1,20 @@
-from flask import  Flask ,render_template
+import datetime
 
-app=Flask(__name__)
+from flask import Flask, render_template
+
+
+app = Flask(__name__)
+
 
 @app.route("/")
 def index():
-    headline='Hellow World !'
-    return  render_template('index.html',headline=headline)
+    now = datetime.datetime.now()
+    new_year = now.month == 1 and now.day == 1
+    new_year=True
+    return render_template('index.html', new_year=new_year)
 
+
+#@app.route('/bye')
+#def bye():
+#    headline = 'Goodbye'
+#   return render_template('index.html', headline=headline)
