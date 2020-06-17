@@ -1,0 +1,4 @@
+set FLASK_APP=file.py
+set FLASK_MEV=development
+flask run
+WSGI
